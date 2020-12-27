@@ -7,4 +7,4 @@ How to Run:
 
 > python manage.py migrate
 
-Change : **EMAIL_HOST_USER** and **EMAIL_HOST_PASSWORD** to your own info
+Change : **EMAIL_HOST_USER** and **EMAIL_HOST_PASSWORD** to your own info in settings.py
