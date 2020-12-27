@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{%block title%}Home Page{%endblock%}
+
+{%block content%}
+
+{%if aks%}
+<div style="margin-top: 5%;">
+    <img src='{{aks}}' class="rounded mx-auto d-block" alt="Check Internet connection!">
+</div>
+{%endif%}
+
+{%if alert%}
+<div class="alert alert-primary" role="alert">
+    {{ payam }}
+</div>
+{%endif%}
+
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li  {% if message.tags %} class=" {{ message.tags }} " {% endif %}> {{ message }} </li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+
+{%endblock%}
